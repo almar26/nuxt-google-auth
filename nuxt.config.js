@@ -62,7 +62,7 @@ export default {
         clientId: process.env.GOOGLE_CLIENT_ID,
         responseType: "token id_token ",
         scope: ["openid", "profile", "email"],
-        redirectUri: "https://nuxt-google-auth-two.vercel.app/auth/callback",
+        redirectUri: process.env.REDIRECT_URI,
         codeChallengeMethod: "",
       },
 
