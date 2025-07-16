@@ -59,8 +59,7 @@ export default {
           type: "Bearer",
           maxAge: 1800,
         },
-        clientId:
-          "556868606794-vim29disnrl6hrf149ud1r0kopjfevjk.apps.googleusercontent.com",
+        clientId: process.env.GOOGLE_CLIENT_ID,
         responseType: "token id_token ",
         scope: ["openid", "profile", "email"],
         redirectUri: "http://localhost:3000/auth/callback",
